@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CyberSafe | Ciberseguridad & Concientización</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Canvas de partículas de fondo -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navegación -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-inner">
+            <a href="#" class="nav-logo">
+                <div class="logo-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <span>CyberSafe</span>
+            </a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#ataques">Ciberataques</a></li>
+                <li><a href="#concientizacion">Concientización</a></li>
+                <li><a href="#marco-juridico">Marco Jurídico RD</a></li>
+                <li><a href="#estadisticas">Estadísticas</a></li>
+                <li><a href="#marco-juridico" class="btn-nav">Aprende más</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="dot"></span> Actualizado 2026 — Mantente protegido
+                </div>
+                <h1>Tu seguridad digital <br><span class="highlight">comienza aquí.</span></h1>
+                <p>Descubre cómo protegerte de las amenazas cibernéticas más comunes. Información clara, práctica y accesible para todos, sin tecnicismos innecesarios.</p>
+                <div class="hero-buttons">
+                    <a href="#ataques" class="btn btn-primary"><i class="fa-solid fa-bug"></i> Ver ciberataques</a>
+                    <a href="#concientizacion" class="btn btn-outline"><i class="fa-solid fa-lightbulb"></i> Tips de seguridad</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ciberataques -->
+        <section id="ataques">
+            <div class="section-container">
+                <div class="section-header fade-in">
+                    <span class="section-badge">Amenazas</span>
+                    <h2 class="section-title">Tipos de <span class="gradient-text">Ciberataques</span></h2>
+                    <p class="section-subtitle">Conoce las tácticas más utilizadas por los atacantes para comprometer tu información y cómo identificarlas a tiempo.</p>
+                </div>
+                <div class="cards-grid">
+                    <!-- Tarjetas de ciberataques (6) -->
+                    <div class="card fade-in">
+                        <div class="card-icon pink"><i class="fa-solid fa-fish"></i></div>
+                        <h3>Phishing</h3>
+                        <p>Suplantación de identidad mediante correos o mensajes falsos que parecen legítimos. El objetivo es robar credenciales, datos bancarios o instalar malware.</p>
+                        <span class="tag danger">Ingeniería Social</span>
+                    </div>
+                    <div class="card fade-in">
+                        <div class="card-icon amber"><i class="fa-solid fa-lock"></i></div>
+                        <h3>Ransomware</h3>
+                        <p>Software malicioso que cifra tus archivos y exige un rescate económico para liberarlos. Puede paralizar empresas enteras en cuestión de minutos.</p>
+                        <span class="tag warning">Alto Impacto</span>
+                    </div>
+                    <div class="card fade-in">
+                        <div class="card-icon cyan"><i class="fa-solid fa-network-wired"></i></div>
+                        <h3>DDoS</h3>
+                        <p>Ataque de denegación de servicio distribuido. Satura servidores con tráfico masivo para dejar sitios web o servicios fuera de línea.</p>
+                        <span class="tag info">Infraestructura</span>
+                    </div>
+                    <div class="card fade-in">
+                        <div class="card-icon purple"><i class="fa-solid fa-user-secret"></i></div>
+                        <h3>Man-in-the-Middle</h3>
+                        <p>El atacante intercepta la comunicación entre dos partes sin que ninguna lo sepa, robando datos sensibles transmitidos en redes no seguras.</p>
+                        <span class="tag info">Intercepción</span>
+                    </div>
+                    <div class="card fade-in">
+                        <div class="card-icon green"><i class="fa-solid fa-key"></i></div>
+                        <h3>Fuerza Bruta</h3>
+                        <p>Automatización de intentos masivos de contraseñas hasta encontrar la correcta. Las contraseñas débiles son vulnerables en segundos.</p>
+                        <span class="tag warning">Credenciales</span>
+                    </div>
+                    <div class="card fade-in">
+                        <div class="card-icon pink"><i class="fa-solid fa-code"></i></div>
+                        <h3>Inyección SQL</h3>
+                        <p>Inserción de código malicioso en formularios web para manipular bases de datos. Puede exponer millones de registros confidenciales.</p>
+                        <span class="tag danger">Web</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Concientización -->
+        <section id="concientizacion">
+            <div class="section-container">
+                <div class="section-header fade-in">
+                    <span class="section-badge">Buenas Prácticas</span>
+                    <h2 class="section-title">Concientización <span class="gradient-text">Cibernética</span></h2>
+                    <p class="section-subtitle">Pequeños cambios en tus hábitos digitales pueden marcar una gran diferencia en tu seguridad.</p>
+                </div>
+                <div class="tips-list">
+                    <div class="tip-item fade-in">
+                        <div class="tip-num">01</div>
+                        <div class="tip-content">
+                            <h4>Usa contraseñas robustas y únicas</h4>
+                            <p>Combina mayúsculas, minúsculas, números y símbolos. Usa un gestor de contraseñas y nunca repitas la misma en distintos servicios.</p>
+                        </div>
+                    </div>
+                    <div class="tip-item fade-in">
+                        <div class="tip-num">02</div>
+                        <div class="tip-content">
+                            <h4>Activa la autenticación en dos pasos (2FA)</h4>
+                            <p>Agrega una capa extra de seguridad. Incluso si alguien obtiene tu contraseña, no podrá acceder sin el segundo factor.</p>
+                        </div>
+                    </div>
+                    <div class="tip-item fade-in">
+                        <div class="tip-num">03</div>
+                        <div class="tip-content">
+                            <h4>Desconfía de enlaces sospechosos</h4>
+                            <p>Pasa el cursor sobre los enlaces antes de hacer clic. Verifica que la URL sea legítima. Ante la duda, no hagas clic.</p>
+                        </div>
+                    </div>
+                    <div class="tip-item fade-in">
+                        <div class="tip-num">04</div>
+                        <div class="tip-content">
+                            <h4>Mantén tu software actualizado</h4>
+                            <p>Las actualizaciones corrigen vulnerabilidades conocidas. Activa las actualizaciones automáticas siempre que sea posible.</p>
+                        </div>
+                    </div>
+                    <div class="tip-item fade-in">
+                        <div class="tip-num">05</div>
+                        <div class="tip-content">
+                            <h4>Realiza copias de seguridad periódicas</h4>
+                            <p>Guarda tus archivos importantes en al menos dos lugares distintos. Ante un ransomware, tener backups es tu mejor defensa.</p>
+                        </div>
+                    </div>
+                    <div class="tip-item fade-in">
+                        <div class="tip-num">06</div>
+                        <div class="tip-content">
+                            <h4>Evita redes WiFi públicas sin protección</h4>
+                            <p>Usa siempre una VPN cuando te conectes a redes abiertas. Los atacantes pueden espiar tu tráfico fácilmente en estas redes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marco Jurídico RD -->
+        <section id="marco-juridico">
+            <div class="section-container">
+                <div class="section-header fade-in">
+                    <span class="section-badge">🇩🇴 República Dominicana</span>
+                    <h2 class="section-title">Marco Jurídico de la <span class="gradient-text">Ciberseguridad</span></h2>
+                    <p class="section-subtitle">Legislación vigente que regula los delitos tecnológicos y protege los derechos digitales en la República Dominicana.</p>
+                </div>
+                <div class="legal-grid">
+                    <!-- Ley 53-07 -->
+                    <div class="legal-card fade-in">
+                        <span class="law-icon">📜</span>
+                        <h3>Ley 53-07</h3>
+                        <span class="law-ref">Crímenes y Delitos de Alta Tecnología</span>
+                        <p>Promulgada el 23 de abril de 2007, es la ley marco contra los delitos cibernéticos en RD. Tipifica conductas como el acceso ilícito a sistemas, fraude electrónico, robo de identidad digital, difusión de virus y spam malicioso. Establece sanciones que van desde multas hasta penas de prisión de 3 meses a 10 años.</p>
+                        <div class="highlight-box">
+                            ⚖️ Art. 6-20: Sanciona el acceso ilegítimo a sistemas informáticos protegidos. Penas de 3 meses a 2 años y multas de 20 a 200 salarios mínimos.
+                        </div>
+                    </div>
+                    <!-- Ley 172-13 -->
+                    <div class="legal-card fade-in">
+                        <span class="law-icon">🔒</span>
+                        <h3>Ley 172-13</h3>
+                        <span class="law-ref">Protección de Datos Personales</span>
+                        <p>Establece el marco legal para la protección integral de los datos personales en RD. Obliga a empresas e instituciones a obtener consentimiento para el tratamiento de datos, garantiza los derechos ARCO (Acceso, Rectificación, Cancelación y Oposición) y exige medidas de seguridad para prevenir filtraciones.</p>
+                        <div class="highlight-box">
+                            🔐 Art. 28: Las entidades deben implementar medidas técnicas y organizativas para garantizar la seguridad de los datos personales.
+                        </div>
+                    </div>
+                    <!-- Decreto 230-18 -->
+                    <div class="legal-card fade-in">
+                        <span class="law-icon">🛡️</span>
+                        <h3>Decreto 230-18</h3>
+                        <span class="law-ref">CSIRT-RD — Respuesta a Incidentes</span>
+                        <p>Crea el Centro Nacional de Respuesta a Incidentes Cibernéticos (CSIRT-RD), adscrito al Ministerio de la Presidencia. Su función es coordinar la detección, prevención y respuesta ante amenazas cibernéticas a nivel nacional. Opera 24/7 para proteger infraestructuras críticas del Estado dominicano.</p>
+                        <div class="highlight-box">
+                            📡 El CSIRT-RD ofrece alertas tempranas, análisis forense digital y coordinación con organismos internacionales como el OEA/CICTE.
+                        </div>
+                    </div>
+                    <!-- Constitución -->
+                    <div class="legal-card fade-in">
+                        <span class="law-icon">📖</span>
+                        <h3>Constitución Dominicana</h3>
+                        <span class="law-ref">Artículo 44 — Derecho a la Intimidad</span>
+                        <p>La Constitución de 2015 (proclamada el 13 de junio) garantiza el derecho a la intimidad, el honor personal y la inviolabilidad de la correspondencia y documentos privados. Este artículo es la base constitucional que protege los datos personales y la privacidad digital de todos los ciudadanos.</p>
+                        <div class="highlight-box">
+                            📋 Art. 44: "Toda persona tiene derecho a la intimidad. Se garantiza el respeto y la no injerencia en la vida privada..."
+                        </div>
+                    </div>
+                    <!-- Estrategia Nacional -->
+                    <div class="legal-card fade-in">
+                        <span class="law-icon">🎯</span>
+                        <h3>Estrategia Nacional de Ciberseguridad</h3>
+                        <span class="law-ref">Actualización 2022-2026</span>
+                        <p>Documento estratégico que define la política nacional de ciberseguridad. Establece cinco pilares: gobernanza, protección de infraestructuras críticas, desarrollo de capacidades, cooperación internacional y concientización ciudadana. Coordinada por el Ministerio de la Presidencia.</p>
+                        <div class="highlight-box">
+                            🌐 Pilar 5: Promueve campañas masivas de concientización cibernética para toda la población dominicana.
+                        </div>
+                    </div>
+                    <!-- INDOTEL -->
+                    <div class="legal-card fade-in">
+                        <span class="law-icon">📡</span>
+                        <h3>INDOTEL</h3>
+                        <span class="law-ref">Regulador de Telecomunicaciones</span>
+                        <p>El Instituto Dominicano de las Telecomunicaciones regula las comunicaciones digitales y colabora en la implementación de normativas de seguridad cibernética. Supervisa el cumplimiento de estándares de protección en redes de telecomunicaciones y servicios digitales.</p>
+                        <div class="highlight-box">
+                            📞 Resolución 025-21: Establece lineamientos de seguridad para proveedores de servicios de telecomunicaciones.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estadísticas -->
+        <section id="estadisticas">
+            <div class="section-container">
+                <div class="section-header fade-in">
+                    <span class="section-badge">Datos Relevantes</span>
+                    <h2 class="section-title">El impacto en <span class="gradient-text">Números</span></h2>
+                    <p class="section-subtitle">Cifras que demuestran por qué la ciberseguridad es una prioridad global y local.</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card fade-in">
+                        <span class="stat-number" data-target="43">0</span><span class="stat-number">%</span>
+                        <span class="stat-label">De los ciberataques afectan a pequeñas empresas</span>
+                    </div>
+                    <div class="stat-card fade-in">
+                        <span class="stat-number" data-target="560">0</span><span class="stat-number">K+</span>
+                        <span class="stat-label">Nuevos malware detectados cada día</span>
+                    </div>
+                    <div class="stat-card fade-in">
+                        <span class="stat-number" data-target="91">0</span><span class="stat-number">%</span>
+                        <span class="stat-label">De los ataques comienzan con un correo de phishing</span>
+                    </div>
+                    <div class="stat-card fade-in">
+                        <span class="stat-number" data-target="6">0</span><span class="stat-number">.4M</span>
+                        <span class="stat-label">Costo promedio de una brecha de datos (USD)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-text">© 2026 CyberSafe — Concientización en Ciberseguridad. Contenido informativo, no constituye asesoría legal.</p>
+            <ul class="footer-links">
+                <li><a href="#ataques">Ciberataques</a></li>
+                <li><a href="#concientizacion">Concientización</a></li>
+                <li><a href="#marco-juridico">Marco Jurídico RD</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Botón volver arriba -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
